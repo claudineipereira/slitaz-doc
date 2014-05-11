@@ -1,0 +1,105 @@
+====SliTaz Guides====
+
+<p>The SliTaz GNU/Linux quick start and complete guides by the community. 
+You will find here specific guides to software, hardware or system 
+configurations written by SliTaz users and contributors. 
+These guides aim to provide concise and correct instructions. They explain 
+a precise example of a solution and don't expect to be a general how-to.</p>
+
+===General===
+
+<ul>
+<li>[SliTaz Newbie Guide|en/guides/newbie]</li>
+<li>[SliTaz Newbie Guide II|en/guides/reallybasicnewbie] - Training 
+for really Basic Newbie coming from Windows</li>
+<li>[README|en/guides/read] - Before you post a question in the 
+Community Forum</li>
+<li>[Contribute to Slitaz|en/guides/contributor] - Guidelines to 
+become a SliTaz Contributor</li>
+<li>[Most Annoying Bugs|en/guides/bugs]</li>
+<li>[FAQ|en/guides/faq]</li>
+<li>[Testing Packages|en/guides/testingapps] - Quality Management</li>
+</ul>
+
+===Installation, flavors and virtualization===
+
+<ul>
+<li>[PXE boot|en/guides/pxe] - Boot from the web</li>
+<li>[Live CD for low RAM systems|en/guides/lowramcd]</li>
+<li>[Frugal install to Windows partition|en/guides/frugal]</li>
+<li>[Unusual install methods|en/guides/uncommoninst]</li>
+<li>[LiveUSB|en/guides/liveusb] - Installation to a USB flash drive</li>
+<li>[Offline DVD|en/guides/dvd] - All Slitaz resources on one DVD</li>
+<li>[SD Card|en/guides/sdcard] - How to install SliTaz to a MMC/SD flash memory card</li>
+<li>[Online builder!http://pizza.slitaz.me] - Create a flavor using Pizza</li>
+<li>[Create many-in-1 flavors|en/guides/manyinone]</li>
+<li>[Qemu|en/guides/qemu] - SliTaz GNU/Linux with Qemu</li>
+<li>[VMware|en/guides/vmware] - SliTaz GNU/Linux with VMware</li>
+<li>[Virtualbox|en/guides/virtualbox] - SliTaz GNU/Linux with virtualbox</li>
+<li>[Net start usage and immediate installation on hard disk|en/guides/netstart]</li>
+<li>[Grub2!http://blog.bodhizazen.net/linux/how-to-install-slitaz-with-ext4-and-grub2] - Install SliTaz with grub2 (and ext4)</li>
+<li>[Boot tree|en/guides/bootguide] - What happens when you power on your slitaz box</li>
+</ul>
+
+===Networking / LAN===
+
+<ul>
+<li>[Wifi easy|en/guides/wifi-easy] - Easy way to configure wifi</li>
+<li>[Wifi hard|en/guides/wifi-hard] - Hard way to configure wifi</li>
+<li>[Network.sh script|en/guides/network-script] - The /etc/init.d/network.sh file</li>
+<li>[VPN|en/guides/vpn] - Build your own Virtual Private Network</li>
+<li>[3G/Dialup|en/guides/dialup] - How to get your 3G modem working</li>
+<li>[Modem|en/guides/modem] - Modem dialup with ppp or wvdial</li>
+<li>[Bluetooth|en/guides/bluetooth] - Configure bluetooth</li>
+<li>[Windows Networking with Samba|en/guides/samba] - Share Windows/Linux files</li>
+<li>[Remote Desktop|en/guides/remotedesktop] - NX software from NoMachine</li>
+</ul>
+
+===Software===
+
+<ul>
+<li>[FlashInstall|en/guides/flash] - How to install Adobe Flash Player</li>
+<li>[Super Fast Boot|en/guides/boottime] - Super fast boot time</li>
+<li>[Midori|en/guides/midori] - Midori Tips and Tweaks</li>
+<li>[Sexy Desktop|en/guides/sexydesktop] - Desktop apps and config</li>
+<li>[Tor|en/guides/tor] - The Tor Install Guide without blah-blah</li>
+<li>[Conspy|en/guides/conspy] - Tiny session manager or shared console</li>
+<li>[Wicd|en/guides/wicd] - Lightweight network manager</li>
+<li>[Alsaequal|en/guides/alsaequal] - Real-time adjustable equalizer plugin for ALSA</li>
+</ul>
+
+===Hardware===
+
+<ul>
+<li>[Xorg/Xvesa|en/guides/xorg-xvesa] - What to do if X is will not start or has the wrong resolution</li>
+<li>[Nvidia|en/guides/nvidia] - Install the latest non-free Nvidia driver</li>
+<li>[Poulsbo|en/guides/poulsbo] - Poulsbo graphics installation</li>
+<li>[Webcam|en/guides/webcam] - How to get your webcam working</li>
+<li>[Printing|en/guides/printer] - Howto print, CUPS install and configuration</li>
+<li>[Power Management|en/guides/powermgmt] - ACPI (Advanced Configuration and Power Interface)</li>
+<li>[CPU Frequency Scaling|en/guides/cpu-frequency] - CPU Frequency Scaling instructions</li>
+</ul>
+
+===Server setup and system Administration===
+
+<ul>
+<li>[Database engine|en/guides/database] - SQLite and other DB management systems</li>
+<li>[Drupal|en/handbook/server-apps#drupal] - Powerful CMS engine using PHP/MySQL</li>
+</ul>
+
+===Window Managers===
+
+<ul>
+<li>[DWM|en/handbook/wm#dwm]</li>
+<li>[Pekwm|en/handbook/wm#pekwm]</li>
+<li>[Xfce|en/handbook/wm#xfce]</li>
+</ul>
+
+===Kernel and SliTaz Build system===
+
+<ul>
+<li>[CustomKernel|en/guides/kernel] - Build your own custom Linux Kernel</li>
+<li>[Chroot|en/guides/chroot] - How to setup a chroot to cook packages</li>
+<li>[Tips for compiling with Tazwok|en/guides/tazwoktips] - Build packages for SliTaz more effectively</li>
+<li>[hal-removal|en/guides/hal-removal] - Documentation for removing hal in 5.0</li>
+</ul>

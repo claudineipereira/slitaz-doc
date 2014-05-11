@@ -1,0 +1,67 @@
+====SliTaz Community Documentation====
+
+<p>
+This site is the central place for all SliTaz documentation. The Wiki site 
+supports full translations. The main language is English and please try and 
+keep the documentation hierarchy.
+</p>
+
+===Spread SliTaz Wiki===
+
+<p>
+Share this page or another one on your Blog, Twitter, Identica account or 
+Like this page on Facebook to help us spread Slitaz all around the world 
+and make it even more famous and popular! You can also **Like** the official 
+[SliTaz Facebook page!http://www.facebook.com/slitaz].
+</p>
+
+===Contributing===
+
+<p>If you'd like to help with the documentation, jump in! Take a look at the 
+[Documentation Guidelines|en/guidelines], pick your page and go!
+</p>
+
+<p>
+There's many areas in which you can help:
+</p>
+
+<ul>
+<li>**Are you an experienced SliTaz user?**</li>
+</ul>
+
+<p>
+Go for the [SliTaz Guides|en/guides]. They take users through a process and 
+range from customising your desktop to getting networking set-up.
+</p>
+
+<ul>
+<li>**Are you a general Linux user?**</li>
+</ul>
+
+<p>
+Take a look at the [SliTaz Handbook|en/guides/handbook]. A lot of general 
+introduction to SliTaz, Linux or available software can be written there. 
+Some people find it difficult to write technically, others struggle with 
+more generically informative writing. Both are needed, in describing the 
+topic and scope before brief instructions.
+</p>
+
+<ul>
+<li>**Are you a non-English speaker?**</li>
+</ul>
+
+<p>
+Translations are very important to the global audience SliTaz attracts. 
+We need speakers of the above languages to ensure non-English readers 
+experience better translations than automated services can provide! 
+Those are the locales supported by the SliTaz system. We are aiming to 
+add more in the future if you can help, please do!
+</p>
+
+<p>
+<em>There are more ways to help out with the SliTaz community than 
+documentation. If you're interested, everything from artwork to package 
+testing would be greatly appreciated! Simply post a quick message to the 
+forum or mailing list, or see the [SliTaz Contributors|en/guides/contributor] 
+page for how you can get started. Thanks!</em>
+</p>

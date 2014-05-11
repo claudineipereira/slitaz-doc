@@ -1,0 +1,359 @@
+<h2 id="slitaz-newbie-guide">Slitaz Newbie Guide</h2>
+
+<h3 id="slitaz-the-os">SliTaz "the OS"</h3>
+
+<h4 id="introduction">Introduction</h4>
+
+<p>
+SliTaz is an [OS!http://en.wikipedia.org/wiki/Operating_system]
+available in many different actual versions and a lot of obsolete
+versions available for very old hardware possibly working better with 
+old software as such. The actual versions include very small “text only 
+versions” (just enough to start or fashioned fully to work in text mode) 
+as well as starting directly in graphics mode. SliTaz always proposes a
+stable version of the <abbr title="Operating System">OS</abbr> as well
+as a version being in constant development in which the newest packages 
+are to be found for testing purposes. The users have to decide which way 
+they prefer: Graphics or not, and/or stable or testing.
+</p>
+
+<h4 id="slitaz-is-free">Slitaz is free</h4>
+
+<p>
+The next consideration is how to get and (begin to) use SliTaz. As SliTaz 
+is distributed directly, it is completely free (but not the non-free 
+proprietory code downloadable from distributors using a download script 
+recognizable by the name «get-something»; you may download these using 
+the SliTaz script but you have to respect all of the possible conditions 
+imposed by the owner), you can get SliTaz for no cost and do whatever you 
+want with it. You can get it provided as is and all that you decide to do 
+with SliTaz becomes your responsibility. Please be fair to the authors if 
+you change something in his/her work or if you use it for other purposes 
+as originally intended. 
+</p>
+
+<h4 id="get-slitaz">Get Slitaz</h4>
+
+<p>
+You will probably begin to use SliTaz by getting it online. You can also 
+proceed differently by building SliTaz from Scratch. This way is also 
+documented but probably rare among the fans using the distribution. 
+</p>
+
+<p>
+There are 3 ways to get SliTaz stuff online:
+</p>
+
+<ol>
+<li>download a SliTaz base distro directly from an internet network 
+complete with a very short bootable application.</li>
+<li>download a Slitaz base distro online as a first step and then 
+activate it using one or more steps.</li>
+<li>complete the environment by adding packages also downloadable online.</li>
+</ol>
+
+<h4 id="support">Support</h4>
+
+<p>
+Apart from software; SliTaz offers a complete scope of services:
+</p>
+
+<ol>
+<li>[www.slitaz.org!http://www.slitaz.org] - information and news concerning 
+the activity of the SliTaz community.</li>
+<li>[doc.slitaz.org!http://doc.slitaz.org] - complete documentation on 
+SliTaz Linux which realizes a specimen of Linux with all its main functions 
+and without major concessions: Slitaz uses «root», «password» and «user» 
+like most other serious Linux versions. All the stuff is detailed in the 
+SliTaz Handbook. It can be considered as a short, but complete reference 
+for all Linux beginners (especially if they do not work with SliTaz 
+on a daily basis). The SliTaz doc also includes Guides being more
+orientated towards SliTaz and specific tasks.</li>
+<li>[forum.slitaz.org!http://forum.slitaz.org] - discussion point for the 
+SliTaz community in many languages. </li>
+<li>[scn.slitaz.org!http://scn.slitaz.org] - SliTaz Community, read more at 
+the web page and look on the top right hand side of the page to discover 
+yourself the other branches of the community. Please note 
+the [IRC channel!http://webchat.freenode.net/?channels=#slitaz] as you can 
+often get help directly on it!</li>
+<li>[mirror.slitaz.org!http://mirror.slitaz.org/iso] - SliTaz Mirror, where 
+you will find a lot of ISO files to start your adventure with Slitaz.</li>
+</ol>
+
+<h4 id="activate-slitaz">Activate SliTaz</h4>
+
+<p>
+By using a Slitaz CD (offers a web boot as well as a traditional ISO boot) 
+or a Slitaz floppy (web boot only), there is not much to do! If a prepared 
+Slitaz CD or Floppy is in the CD/Floppy drive before the PC starts, just 
+start the PC and follow the instructions on screen!
+</p>
+
+<p>
+Before you start, you can also insert an USB memory stick with a prepared 
+file system «ext3» into one of your USB connectors. This automatically will 
+be the place where your data is stored (Linux users say “home”).
+</p>
+
+<p>
+Nothing else could be more easy!
+</p>
+
+<p>
+If this kind of installation can't be used, SliTaz offers a lot of 
+other solutions adapted to other starting problems and wishes!
+</p>
+
+<p>
+The next chapter will introduce you to something else!
+</p>
+
+<h3 id="start-slitaz-with-grub2">Start SliTaz with Grub2!</h3>
+
+<h4 id="master-boot-record-mbr">Master Boot Record (MBR)</h4>
+
+<p>
+In each PC, at least one of the drives (if more than one) is the Master 
+and contains the MBR where the initial startup following each shutdown 
+is defined. In probably most PCs this special record is occupied by 
+Microsoft's starting software. This software defines usually that 
+the PC can only start Microsoft- or IBM-DOS or -Windows (only rarely do 
+PCs propose a real Dual Boot). 
+</p>
+
+<p>
+It is not possible to boot with the Microsoft software directly into 
+another <abbr title="Operating System">OS</abbr>! 
+</p>
+
+<p>
+But it is possible to rewrite that software, a [bootloader|en/guides/bootloader]
+can do it (and over that preserve eventually the ability to boot Microsoft - 
+or IBM-DOS or - Windows or free or not clones like
+[freeDOS!http://www.freedos.org] or [ReactOS|http://www.reactos.org] or 
+more than one <abbr title="Operating System">OS</abbr>).
+</p>
+
+<h4 id="grub2-is-the-gnu-actual-standard-boot-loader">Grub2 is the GNU actual standard boot loader</h4>
+
+<p>
+SliTaz holds [Grub2!http://www.gnu.org/software/grub] in its repositories. 
+If not already available on your system you can install it by entering 
+the following command in the console providing you have a valid Linux 
+partition with a /boot directory (both can be empty):
+</p>
+
+<pre>tazpkg get-install grub2</pre>
+
+<p>
+Continue in the command line (to install grub to your MBR) with:
+</p>
+
+<pre>grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg</pre>
+
+<p>
+This main way of Grub2 installation happens generally **<em>after</em>** 
+the installation of SliTaz itself (in the case of SliTaz or of the other 
+linuxes if installed by another distribution).
+</p>
+
+<p>
+Let's speak on that now?
+</p>
+
+<p>
+Because it is the first step of what happens using SliTaz before Slitaz 
+starts itself! Also bootable CDs or floppies contain their own little 
+different boot loader. Perhaps you have Grub2 already pre-installed from 
+a preceeding <abbr title="Operating System">OS</abbr> installation? In 
+this case you only have to adapt your Grub2 installation! And you can 
+start to directly use Slitaz without some CD or Floppy at the next start! 
+If not, you just need to start Slitaz once through another way (CD, 
+Floppy, USB installation etc.) if needed, adapt the partition of your
+hard disk, install Grub2 on the target partition, and continue…
+</p>
+
+<p>
+And you will see in the next chapter that Grub2 is very flexible and 
+doesn't need any <abbr title="Operating System">OS</abbr> installation at 
+all. It can start ISO files or frugal <abbr title="Operating System">OS</abbr>
+versions, as well as any full installations.
+</p>
+
+<p>
+More! The new Grub2 does not need a valid configuration at all. It 
+includes a tiny command interpreter and it would be possible to start
+your system step by step using individual commands if you knew perfectly 
+well how to do that and which parameters you have to enter (it is probably 
+the best way to make your system inaccessible to all other people except 
+real freaks!).
+</p>
+
+<h4 id="adapt-a-grub2-installation">Adapt a Grub2 installation</h4>
+
+<p>
+**<em>WARNING:</em>** There are 2 usages for Grub2.
+</p>
+
+<p>
+Some distros (for example Debian, Ubuntu, etc.) use an extended one and 
+require from you that you don't manually edit yourself the 
+/boot/grub/grub.conf file! If you continue to use these distros, please
+read the instructions given in the docs for that distro because that
+distro will probably automatically overwrite all the changes you made 
+manually if you don't respect their prescribed way!
+</p>
+
+<p>
+Some distros have a simple usage of Grub2 and allow the direct adaptation 
+of the text file /boot/grub/grub.conf. In this case you can adapt your 
+Grub2 installation by changing the text in it. This is the configuration 
+file for Grub2!
+</p>
+
+<h4 id="typical-contents-of-grub2-as-used-in-slitaz">Typical contents of Grub2 as used in SliTaz</h4>
+
+<p>
+I have 3 active Slitaz versions on my hard disk. The first one, an 
+actual <em>base version</em> (full operable, in console mode only), 
+release 4.0, only about 7.2 Mb, will be started directly as an ISO file 
+without any other preparation: 
+</p>
+
+<pre>menuentry "SliTaz, ISO start, on /dev/sda5" {
+set root=(hd0,5)
+set isofile="/slitaz-4.0-base.iso"
+loopback iso $isofile
+linux (iso)/boot/bzImage from=$isofile ramdisk_size=6666 home=usb root=/dev/ram0 rw autoexec=startx changes=s512.dat
+initrd (iso)/boot/rootfs.gz
+}</pre>
+
+<p>
+The second was prepared by using a concatenated file rootfs.gz (its 
+original ISO file did contain the split file system) and is a classic
+«frugal»!:
+</p>
+
+<pre>menuentry "SliTaz, frugal, on /dev/sda5" {
+set root='(hd0,5)'
+linux /slitaz/bzImage pdev1=sda5 psubdir=slitaz
+initrd /slitaz/rootfs.gz
+}</pre>
+
+<p>
+This last one is for a full installation:
+</p>
+
+<pre>menuentry "SliTaz, full, ext4, on /dev/sda3" {
+linux (hd0,3)/boot/vmlinuz-3.2-slitaz root=/dev/hda3 ro vga=normal 
+}</pre>
+
+<p>
+<em>Note:</em> Take care that all file names and paths are real and 
+correctly written! Take care to write
+[CamelCase!http://en.wikipedia.org/wiki/CamelCase] names that linux users 
+love to use! Esp. for example in the name <em>bzImage</em> !!!
+</p>
+
+<h3 id="training">Training</h3>
+
+
+<p>
+I will now propose some <em>beginner training</em>.
+</p>
+
+<h4 id="base-training">Base training</h4>
+
+<h5 id="starting-slitaz-base">Starting SliTaz base</h5>
+
+<p>
+4 ways at your disposal:
+</p>
+
+<ol>
+<li>burn the ISO on a fresh CD as an ISO (special burn mode) and start 
+from the CD.</li>
+<li>download / copy the ISO into the root of a partition of your hard 
+disk and start with Grub2.</li>
+<li>burn an ISO or use an old SliTaz CD: which still contains all of 
+the CD as well as the net install option to make use of a net start 
+of SliTaz base.</li>
+<li>install the net install floppy image on a floppy and make a net 
+start using SliTaz base.</li>
+</ol>
+
+<p>
+During this training, we will not install! 
+</p>
+
+<p>
+The CD start has a slight advantage: you can pass parameters (see CD 
+messages: a short time after starting the CD will invite you to enter 
+parameters and indicate to you how to see which parameters are available). 
+But it has a great inconvenience: it is a dirty way to produce an ISO 
+needing a CD for only 7 Mb irregardless of space (try perhaps if possible 
+with a CD-RW)! 
+</p>
+
+<p>
+Two little menus will then appear during the start phase concerning 
+language and keyboard.
+</p>
+
+<p>
+The login appears.
+</p>
+
+<h5 id="login-steps">Login</h5>
+
+<p>
+Yes, in SliTaz, you have to login! But the SliTaz developers have taken
+care to make it easy for you. 
+</p>
+
+<p>
+You can chose one of two ways:
+</p>
+
+<ol>
+<li>enter as user (recommended as a good habit). The standard user in
+our ISO is <em>tux</em> and does not need any password for SliTaz (hit
+only <em>enter</em> at the <em>password</em> prompt).</li>
+<li>enter as <em>root</em> . In linux the system administrator as well 
+as their home directory is named <em>root</em>. Don't confuse both! If
+you directly enter as system administrator, login the system as
+<em>root</em> and repeat <em>root</em> in the <em>password</em> prompt.</li>
+</ol>
+
+<p>
+<em>note:</em> nobody recommends entering a linux system as 
+<em>root</em>, it is a really a bad habit! 
+</p>
+
+<h5 id="first-steps">First steps</h5>
+
+<p>
+As the notorious proprietary <abbr title="Operating System">OS</abbr>
+Unix was cloned into Linux really full graphics systems were not that
+frequent! But it was already possible to realize in console mode extensive
+computer operations. Linux did inherit its wide possibilities. SliTaz
+proposes a very neat and powerful as well as concise environment in console mode. 
+</p>
+
+<h3 id="really-basic-newbies-training">Really basic newbies training</h3>
+
+<p>
+People coming fresh from Windows will probably be surprised by Linux. 
+For this reason, I wrote some [extra training|en/guides/reallybasicnewbie] for them.
+</p>
+
+<p>
+- You can jump this part -
+</p>
+
+<h4 id="daily-commands">Daily commands</h4>
+
+<p>
+As this page is already long, please continue [here|en/guides/basicnewbie]!
+</p>

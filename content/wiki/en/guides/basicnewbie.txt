@@ -1,0 +1,100 @@
+<h2 id="daily-used-linux-commands">Daily used Linux commands</h2>
+
+<p>
+After starting our SliTaz base [here|en/guides/newbie#training] 
+we logged on and can see now, following a Welcome message, a short 
+command line prompt:
+</p>
+
+<pre>tux@dolilive:~$ _</pre>
+
+<p>
+Now we can immediately start to understand who is doing what: 
+</p>
+
+<ul>
+<li>**tux**, is my login name</li>
+<li>**@**, is where I am “at”</li>
+<li>**dolilive**, something <em>like do_Linux_live</em></li>
+<li>**:**, what we chose to do is awaiting us at the prompt and it will 
+be actived here (in absence of some concrete object that would redefine
+the destination)</li>
+<li>**~**, is my «home» (**~** is the symbol for the home directory of 
+the user logged in!)</li>
+</ul>
+
+
+<p>
+<div class="notewarning">warning: **~** depends on the administrative 
+rights you actually have</div>
+</p>
+
+<p>
+If you are <em>root</em>, any data will be automatically registered in 
+the special directory <em>/root</em>. The tree of the main directory is 
+also named the <em>root of the file system</em>. The symbol / is the 
+first sign that you see alone or in the first place of all the other
+paths! It is not possible to unbind the <em>root of the file system</em>
+and the main directory <em>root</em> is used by the administrator 
+<em>root</em> for all of their transactions! This directory
+<em>/root</em> is a special directory as for example as it has to be in 
+the same partition as the tree of main directories as well as hold the 
+contents of the first level! 
+</p>
+
+<p>
+The <em>home</em> of users is a subdirectory in the main directory
+<em>/home</em>! The path is as follows:
+</p>
+
+<pre>/home/tux</pre>
+
+<p>
+tux can be defined differently at the installation if you don't want to
+be called tux! In such a case the path would be: **/home/SomeWhatYouWillBe**.
+Both the contents of home, as well as the contents of <em>SomeWhatYouWillBe</em>
+can also be contained in a separate partition. The automatic installer
+in the SliTaz Panel can help you to do that if you wish. 
+</p>
+
+<p>
+We can enter now at the prompt our first command: 
+</p>
+
+<h3 id="ls">ls</h3>
+
+<p>
+<em>You don't need to exit</em>
+</p>
+
+<p>
+**ls** is a command to list files located in the actual directory.
+Adding parameters and/or paths it can do that in each directory where 
+you have the rights and can do more than just showing the file names. 
+</p>
+
+<p>
+Please test:
+</p>
+
+<ul>
+<li>ls –help</li>
+</ul>
+
+<p>
+(more? see [here!http://en.wikipedia.org/wiki/Ls]).
+</p>
+
+<p>
+And test now please:
+</p>
+
+<ul>
+<li>ls /usr/bin</li>
+</ul>
+
+<h3 id="see-also">See Also</h3>
+
+<p>
+The [SliTaz Handbook|en/handbook].
+</p>
